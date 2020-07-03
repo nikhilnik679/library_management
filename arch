@@ -1,0 +1,42 @@
+Library Mgmt
+Student {
+  fname
+  lname
+  username
+  grno
+  class
+  batch
+  booksIssued
+  studentRegistration()
+  booksissued()
+  bookDateReturn()
+  getPenalty()
+}
+
+Administrator{
+	fname
+	lname
+	username
+	addStudent()
+	deleteStudent()
+	editStudent()
+	issueBook()
+}
+UserRegistration {
+	role
+	studentRegistration()
+	adminRegistration();
+	editAdmin()
+	editStudent()
+}
+Book {
+	bookid
+	bookName
+	author
+	dept
+	copiesNumber
+	currentAvailable
+	issueBook()
+	deleteBook()
+	assignBook()
+}

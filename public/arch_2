@@ -1,0 +1,64 @@
+Database :
+            libdb :
+                     book //
+                     user //
+                     requestedBook //
+
+-------------------------------------
+No of pages with function inside it :
+-------------------------------------
+             header   // function login logout session
+             footer
+             index    //
+
+
+             add_book   |
+             view_book  |  book // function add_book(), view_book(), edit_book() , delete_book()
+             edit_book  |
+
+             request_book  // function requestBook()
+
+             requested_book // function view_requested_books()
+
+             admin  // function addStudent(), deleteStudent(), editStudent(), viewStudent(),
+                                addBook(), viewBook(), editBook(), deleteBook()
+
+             student // function requestBook()
+                                 editStudent()
+
+ simple page with form          add_user
+ simple page with form          view_users
+ simple page with form          edit_user
+
+--------------------------------------------------------------------------
+No of classes with methods and properties   :
+---------------------------------------------
+
+class Database{                                  // this is full/concrete class
+                private function connection()
+                protected function createData()
+                protected function readData()
+                protected function updateData()
+                protected function deleteData()
+}
+
+class Book extends Database{   // Book might be abstract class
+      public    addBook()
+      public    updateBook()
+      public    viewBook()
+                //viewBooks()
+      public    deleteBook()
+      public    requestBook()
+                //searchBook()
+}
+
+Interface User extends Database{  Q. can interface extend class ?
+               createUser()
+               deleteUser()
+               updateUser()
+               viewUser()
+}
+
+class Student implements User{}
+
+class Admin  implements User{}

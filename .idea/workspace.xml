@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8b622106-20bd-43b7-9e3e-8e49ed5324b5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="1dUfmFfGYvx89B2yhQK3F40mD76" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b622106-20bd-43b7-9e3e-8e49ed5324b5" name="Default Changelist" comment="" />
+      <created>1592484749763</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592484749763</updated>
+      <workItem from="1592484753243" duration="81000" />
+      <workItem from="1592484895018" duration="409000" />
+      <workItem from="1592485478165" duration="202000" />
+      <workItem from="1592535806209" duration="8359000" />
+      <workItem from="1592562372401" duration="2516000" />
+      <workItem from="1592629643753" duration="631000" />
+      <workItem from="1592632075211" duration="601000" />
+      <workItem from="1592641652133" duration="601000" />
+      <workItem from="1592656206536" duration="1213000" />
+      <workItem from="1592667517363" duration="253000" />
+      <workItem from="1592667797964" duration="29000" />
+      <workItem from="1592668062001" duration="188000" />
+      <workItem from="1592670433274" duration="13262000" />
+      <workItem from="1592718954648" duration="4977000" />
+      <workItem from="1592749648521" duration="4826000" />
+      <workItem from="1592804235276" duration="2539000" />
+      <workItem from="1592815282754" duration="6593000" />
+      <workItem from="1592836430051" duration="15311000" />
+      <workItem from="1592885214349" duration="5483000" />
+      <workItem from="1592894945380" duration="2305000" />
+      <workItem from="1592903405419" duration="9473000" />
+      <workItem from="1592962439979" duration="11212000" />
+      <workItem from="1592994647991" duration="1351000" />
+      <workItem from="1593011425264" duration="1581000" />
+      <workItem from="1593013042260" duration="428000" />
+      <workItem from="1593055143108" duration="599000" />
+      <workItem from="1593095085373" duration="2821000" />
+      <workItem from="1593133883190" duration="4096000" />
+      <workItem from="1593161156805" duration="419000" />
+      <workItem from="1593176342223" duration="992000" />
+      <workItem from="1593180305534" duration="130000" />
+      <workItem from="1593180447800" duration="60000" />
+      <workItem from="1593180658359" duration="773000" />
+      <workItem from="1593182050523" duration="87000" />
+      <workItem from="1593226162593" duration="2324000" />
+      <workItem from="1593263567817" duration="7755000" />
+      <workItem from="1593314840324" duration="15802000" />
+      <workItem from="1593364131042" duration="2656000" />
+      <workItem from="1593398283290" duration="1586000" />
+      <workItem from="1593400301436" duration="1192000" />
+      <workItem from="1593403314411" duration="4830000" />
+      <workItem from="1593489080174" duration="599000" />
+      <workItem from="1593509362249" duration="7453000" />
+      <workItem from="1593571920392" duration="820000" />
+      <workItem from="1593609978551" duration="3188000" />
+      <workItem from="1593652941468" duration="9553000" />
+      <workItem from="1593680927870" duration="10269000" />
+      <workItem from="1593746069835" duration="3834000" />
+      <workItem from="1593761434000" duration="800000" />
+      <workItem from="1593762245182" duration="971000" />
+      <workItem from="1593772707059" duration="915000" />
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="349" y="72" key="#CLI_Interpreters" timestamp="1592485207395">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="349" y="72" key="#CLI_Interpreters/0.0.1536.834@0.0.1536.834" timestamp="1592485207395" />
+    <state x="475" y="60" key="#PHP" timestamp="1592485212507">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="475" y="60" key="#PHP/0.0.1536.834@0.0.1536.834" timestamp="1592485212507" />
+    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593098767956">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1593098767956" />
+    <state x="539" y="219" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593683514257">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="539" y="219" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1593683514257" />
+    <state x="430" y="78" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1593698449937">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="430" y="78" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1593698449937" />
+    <state x="115" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593698513831">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="115" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1593698513831" />
+    <state x="550" y="172" key="FileChooserDialogImpl" timestamp="1593664696952">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="550" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1593664696952" />
+    <state x="339" y="150" key="NewPhpClassDialog" timestamp="1593668230023">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="339" y="150" key="NewPhpClassDialog/0.0.1536.834@0.0.1536.834" timestamp="1593668230023" />
+    <state x="819" y="546" key="NewPhpFileDialog" timestamp="1593698782591">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="819" y="546" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1593698782591" />
+    <state x="277" y="62" key="SettingsEditor" timestamp="1593181057026">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="277" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1593181057026" />
+    <state x="668" y="333" key="SimpleOpenTaskDialog" timestamp="1592676538975">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="668" y="333" key="SimpleOpenTaskDialog/0.0.1536.834@0.0.1536.834" timestamp="1592676538975" />
+    <state x="611" y="190" key="refactoring.ChangeSignatureDialog" timestamp="1592963318900">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="611" y="190" key="refactoring.ChangeSignatureDialog/0.0.1536.834@0.0.1536.834" timestamp="1592963318900" />
+    <state x="425" y="189" key="run.anything.popup" timestamp="1592968610908">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1592968610908" />
+    <state x="46" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1593685311043">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="46" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1593685311043" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/public/classes/Database.php</url>
+          <line>29</line>
+          <properties>
+            <option name="className" value="\Database" />
+            <option name="methodName" value="readData" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
