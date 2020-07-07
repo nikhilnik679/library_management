@@ -1,46 +1,20 @@
 <?php
 require "templates/header.php";
-/*session_start();
-if(isset($_SESSION['username'])){
-    echo "Welcome";
-    echo "<br/>";
-    echo "<a href='logout.php'>Logout</a>";
-}else{
-    header('location:index.php');
+include "classes/Database.php";
 
-}*/
-
-require "../config.php";
-require "../common.php";
-
-try  {
-    $connection = new PDO($dsn, $username, $password, $options);
-
-    $viewUsers = " select * from user ";
-    $statement = $connection->query($viewUsers);
-    $result = $statement->fetch();
+$obj = new Database();
+$table = 'user';
+$all_books = $obj->readData($table);
 
     if(array_key_exists('delete',$_POST)){
-        deleteUser($connection);
+            $user_id = $_POST['user_id'];
+            $condition = "user_id=". $user_id;
+            $obj->deleteData($table,$condition);
+            echo $_POST['$user_id'] . "User deleted successfully". '<br><hr>';
+            $secondsWait = 1;
+            header("Refresh:$secondsWait");
+            echo "<script>location.href='view_users.php';</script>";
     }
-
-} catch(PDOException $error) {
-    echo  $error->getMessage();
-}
-
-function deleteUser($connection)
-{
-    $user_id = $_POST['user_id'];
-    echo "user selected with id $user_id";
-    $deleteUser = " delete from user where user_id=:user_id ";
-    $statement = $connection->prepare($deleteUser);
-    $statement->execute(['user_id'=>$user_id]);
-    echo $_POST['user_id'] . "user deleted successfully". '<br><hr>';
-    $secondsWait = 1;
-    header("Refresh:$secondsWait");
-}
-
-require "templates/header.php";
 ?>
 
 <hr>
@@ -54,16 +28,16 @@ require "templates/header.php";
         <th>Username</th>
     </tr>
     <?php
-    while( $result = $statement->fetch()){
+      foreach($all_books as $result){
 
         echo "<tr>
             <form  id='view_user' method='post'>
-            <td><input type='text' name='user_id'   value='". $result['user_id']." ' size='1' readonly></td>
-            <td><input type='text' name='firstname'   value='". $result['firstname']." ' size='12' readonly></td>
-            <td><input type='text' name='lastname'   value='". $result['lastname']." ' size='5' readonly></td>
-            <td><input type='text' name='class'   value='". $result['class']." ' size='5' readonly></td>
-            <td><input type='text' name='grno'   value='". $result['gr_no']." ' size='5' readonly></td>
-            <td><input type='text' name='username'   value='". $result['username']." ' size='5' readonly></td>
+            <td><input type='text' name='user_id'   value='". $result['user_id']." '   size='1' readonly></td>
+            <td><input type='text' name='firstname' value='". $result['firstname']." ' size='12' readonly></td>
+            <td><input type='text' name='lastname'  value='". $result['lastname']." '  size='5' readonly></td>
+            <td><input type='text' name='class'     value='". $result['class']." '     size='5' readonly></td>
+            <td><input type='text' name='grno'      value='". $result['gr_no']." '     size='5' readonly></td>
+            <td><input type='text' name='username'  value='". $result['username']." '  size='5' readonly></td>
             <td><input type='submit' class='button'   name='edit' value='Edit' formaction='edit_user.php'></input> </td>
             <td><input type='submit' class='button'   name='delete' value='Delete' ></input></td>
             </form>

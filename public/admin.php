@@ -1,15 +1,6 @@
 
 <?php
-include "templates/header.php";
-/*session_start();
-if(isset($_SESSION['username'])){
-    echo "Welcome";
-    echo "<br/>";
-    echo "<a href='logout.php'>Logout</a>";
-}else{
-    header('location:index.php');
-}*/
-
+require "templates/header.php";
 ?>
 
     <h1 align="center">ADMIN PAGE</h1>
@@ -23,5 +14,6 @@ if(isset($_SESSION['username'])){
         <li><a href="view_users.php"><strong>View All users</strong></a> </li><br>
     </ul>
 
-<?php include "templates/footer.php"; ?>
+<?php
+include "templates/footer.php"; ?>
 

@@ -1,6 +1,7 @@
 <?php
 session_start();
-if(isset($_SESSION['username'])){
+if( isset($_SESSION['username']) && !empty($_SESSION['username'])){
+   // session_start();
     echo "Welcome  " . $_SESSION['username'] ;
     echo "<br/>";
     echo "<a href='logout.php'>Logout</a>";

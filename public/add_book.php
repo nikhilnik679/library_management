@@ -1,55 +1,29 @@
 <?php
 require "templates/header.php";
 include 'classes/Database.php';
-/*session_start();
-if(isset($_SESSION['username'])){
-    echo "Welcome";
-    echo "<br/>";
-    echo "<a href='logout.php'>Logout</a>";
-}else{
-    header('location:index.php');
 
-}*/
 $obj1 = new Database();
 $table = 'book';
 $data = '';
 $result ='';
-    if (isset($_POST['submit'])) {
-
-        $data =  $_POST;
-        echo '<pre>';
-        print_r($data);
-        $result = $obj1->createData($table,$data);
-
-       echo '<pre>';
-       print_r($result);
-
-        /*  try {
-              $connection = new PDO($dsn, $username, $password, $options);
-
-              $insertBook = " insert into book(bookname,author,department) values(:bookname, :author, :department) ";
-              $statement = $connection->prepare($insertBook);
-              $statement->bindparam(':bookname', $bookname);
-              $statement->bindparam(':author', $author);
-              $statement->bindparam(':department', $department);
-
-              $bookname = $_POST['bookname'];
-              $author = $_POST['author'];
-              $department = $_POST['department'];
-              $statement->execute();
-
-          } catch (PDOException $error) {
-              echo $error->getMessage();
-          }*/
+    if (isset($_POST['submit']))
+    {
+        $bookname = $_POST['bookname'];
+        $author = $_POST['author'];
+        $department = $_POST['department'];
+        $field = " `book_id`,`bookname`, `author`, `department` ";
+        $value = " '', '$bookname', '$author', '$department'";
+       // echo '<pre>'; print_r($data);
+        $result = $obj1->createData($table,$field,$value);
+        echo "<script>location.href='view_book.php';</script>";
+       // echo '<pre>'; print_r($result);
     }
-
-
 ?>
 <?php if (isset($_POST['submit']) ) { ?>
     <blockquote><?php echo $_POST['bookname'] , $_POST['author'], $_POST['department']; ?> added successfully.</blockquote> <?php } ?>
 <?php
-//echo "say:::". $_SESSION['role'];
-if(  /* $_SESSION['role'] */  1 ) {
+
+if(   $_SESSION['role']   ) {
     echo '<h3>Welcome :  <span style="color: red"></span></h3>
 <h2>Add a book</h2>
 <hr>

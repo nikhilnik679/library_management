@@ -13,7 +13,6 @@ class Database
    public function openConnection(){
         try{
             $this->connection = new PDO($this->server, $this->user, $this->password, $this->options);
-            echo "success";
             return $this->connection;
         }catch (PDOException $e) {
             echo "There is some problem in connection : " . $e->getMessage();
@@ -25,12 +24,19 @@ class Database
           $this->connection = null;
       }
 
-
     // fetch all / read data i.e select query   R
-    public function readData($table){
+    public function readData($table,$condition = 1){
         try{
             $conn = $this->openConnection();
-            $sql = "select * from $table ";
+          /*  if(isset($condition))
+            {*/
+               // echo "thisllllllllllllll";
+                $sql = "select * from $table where $condition";
+             //    echo "final query : " . $sql;
+         /*   }else{
+                $sql = "select * from $table ";
+            }*/
+        //    $sql = "select * from $table ";
             $stmt = $conn->prepare($sql);
             $stmt->execute();
             $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -44,40 +50,41 @@ class Database
     }
 
     // create data i.e insert query C
-    public function createData($table,$data){
+    public function createData($table,$field,$value){
        try{
-           if($data != ''){
-               foreach ($data as $key=>$val){
-                   $fieldArr[] = $key;
-                   $valueArr[] = $val;
-                }
-           }
            $conn = $this->openConnection();
-           $field=implode(",",$fieldArr);
-           $value=implode("','",$valueArr);
-           $value="'".$value."'";
-           $sql="insert into $table($field) values($value)";
-           echo "final query : " . $sql;
+           $sql="insert into $table ($field) values ($value)";
+          // echo "final query : " . $sql;
            $stmt=$conn->prepare($sql);
            $stmt->execute();
-           die();
+        //   die();
        }catch (PDOException $e){
            echo "There is some problem in connection " . $e->getMessage();
        }
     }
 
     // update data  U
-
-
-    // delete data  D
-    public function deleteData($table,$id){
-        $conn = $this->openConnection();
-        $sql="delete from $table where id='".$id."'";
-        $stmt=$conn->prepare($sql);
-        $stmt->execute();
-        header('location:index.php');
-        die();
+    public function updateData($query){
+        try
+        {
+            $conn = $this->openConnection();
+            $stmt = $conn->prepare($query);
+            $stmt->execute();
+        }catch (PDOException $e){
+            echo "There is some problem in connection " . $e->getMessage();
+        }
     }
 
-
+    // delete data  D
+    public function deleteData($table,$condition){
+        try
+        {
+            $conn = $this->openConnection();
+            $sql="delete from $table where $condition ";
+            $stmt=$conn->prepare($sql);
+            $stmt->execute();
+        }catch (PDOException $e){
+            echo "There is some problem in connection " . $e->getMessage();
+        }
+    }
 }

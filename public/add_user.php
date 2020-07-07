@@ -1,49 +1,30 @@
 <?php
 require "templates/header.php";
-/*session_start();
-if(isset($_SESSION['username'])){
-    echo "Welcome";
-    echo "<br/>";
-    echo "<a href='logout.php'>Logout</a>";
-}else{
-    header('location:index.php');
+include "classes/Database.php";
 
-}*/
+$obj = new Database();
+$table = 'user';
+
 if (isset($_POST['submitUser'])) {
-require "../config.php";
-require "../common.php";
 
-try  {
-$connection = new PDO($dsn, $username, $password, $options);
-
-    $u_firstname = $_POST['first-name'] ;
-    $u_lastname =  $_POST['last-name'];
+    $firstname = $_POST['first-name'] ;
+    $lastname =  $_POST['last-name'];
     $username =  $_POST['username'];
     $gr_no = $_POST['gr_no'];
     $class = $_POST['class'];
     $password =  $_POST['password'];
     $role =  $_POST['role'];
 
-$addUser = " insert into user(firstname,lastname,class,username,gr_no,password,role) values(:u_firstname,:u_lastname,:class,:username,:gr_no,:password,:role) ";
-$statement = $connection->prepare($addUser);
-$statement->bindparam(':firstname', $u_firstname);
-$statement->bindparam(':lastname', $u_lastname);
-$statement->bindparam(':class', $class);
-$statement->bindparam(':username', $username);
-$statement->bindparam(':gr_no', $gr_no);
-$statement->bindparam(':password', $password);
-$statement->bindparam(':role', $role);
+    $field = " `user_id`, `firstname`, `lastname`, `class`, `gr_no`, `username`, `password`, `user_role` ";
+    $value = " '', '$firstname', '$lastname', '$class', '$gr_no', '$username', '$password', '$role' ";
 
-$statement->execute();
-echo "user added successfully";
-} catch(PDOException $error) {
-echo  $error->getMessage();
-}
-}
+    $result = $obj->createData($table,$field,$value);
 
- require "templates/header.php"; ?>
-<?php if (isset($_POST['submit']) && $statement) { ?>
-    <blockquote><?php echo $_POST['username'] ; ?> added successfully.</blockquote> <?php } ?>
+    echo "<script>location.href='view_users.php';</script>";
+
+}
+?>
+
 <h2>Add a User</h2>
 <hr>
 <form method="post">

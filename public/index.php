@@ -1,57 +1,41 @@
 <?php
 require "templates/header.php";
-//file_get_contents();
-try {
-    $db = new PDO('mysql:host=localhost;dbname=libdb;charset=utf8mb4', 'root', '');
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-} catch (PDOException $e) {
-    echo "Connection failed : " . $e->getMessage();
-}
+include 'classes/Database.php';
 
+$obj = new Database();
+$table = 'user';
 $msg = "";
-if (isset($_POST['submitBtnLogin'])) {
 
-    require "../config.php";
-    require "../common.php";
-
+if (isset($_POST['submitBtnLogin']))
+{
     $username = trim($_POST['username']);
     $password = trim($_POST['password']);
-
-    if ($username != "" && $password != "") {
-        try {
-            // $db = new PDO($dsn, $username, $password, $options);
-            $query = "select * from `user` where `username`=:username and `password`=:password";
-            $stmt = $db->prepare($query);
-            $stmt->bindParam('username', $username, PDO::PARAM_STR);
-            $stmt->bindValue('password', $password, PDO::PARAM_STR);
-            $stmt->execute();
-            $count = $stmt->rowCount();
-            $row   = $stmt->fetch(PDO::FETCH_ASSOC);
-            if($count == 1 && !empty($row)) {
-
-                $_SESSION['username'] = $row['username'];
-                if($row['user_role']){
+    if ($username != "" && $password != "")
+    {
+            $condition = "`username`= '$username' and `password`= '$password'";
+            $row = $obj->readData($table,$condition);
+            // echo "message  " . $row[0]['user_role'];
+            if(!empty($row))
+            {
+                session_start();
+                $_SESSION['username'] = $row[0]['username'];
+                if($row[0]['user_role'])
+                {
                     $_SESSION['role'] = true;
-                        header('location:admin.php');
-                        die();
+                    echo "<script>location.href='admin.php';</script>";
+
                 }else{
                     $_SESSION['role'] = false;
-                    header('location:user.php');
-
+                    echo "<script>location.href='user.php';</script>";
                 }
             } else {
                 $msg = "Invalid username and password!";
             }
-        } catch (PDOException $e) {
-            echo "Error : ".$e->getMessage();
-        }
     } else {
         $msg = "Both fields are required!";
     }
 }
 ?>
-
     <form method="post">
         <table class="loginTable">
             <tr>
@@ -75,7 +59,5 @@ if (isset($_POST['submitBtnLogin'])) {
             </tr>
         </table>
     </form>
-
-
 
 <?php include "templates/footer.php"; ?>

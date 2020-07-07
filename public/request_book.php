@@ -1,38 +1,35 @@
 <?php
 require "templates/header.php";
-//session_start();
+include 'classes/Database.php';
+
 /*if(isset($_SESSION['username'])){
     echo "Welcome";
     echo "<br/>";
     echo "<a href='logout.php'>Logout</a>";
 }else{
     header('location:index.php');
-}*/
-if (isset($_POST['request'])) {
-    require "../config.php";
-    require "../common.php";
-
-    try  {
-        $connection = new PDO($dsn, $username, $password, $options);
-
-        $requestBook = " insert into requested_books(bookname,username) values(:bookname, :username) ";
-        $statement = $connection->prepare($requestBook);
-        $statement->bindparam(':bookname', $bookname);
-        $statement->bindparam(':username', $username);
-
-        $bookname= $_POST['bookname'] ;
-        $username =  "some user";
-
-        $statement->execute();
-        echo "book request sent";
-
-    } catch(PDOException $error) {
-        echo  $error->getMessage();
-    }
 }
-?>
+
+$obj1 = new Database();
+$table = 'requested_books';
+$result ='';
+
+if (isset($_POST['request'])) {
+
+    $bookname = $_POST['bookname'];
+    $username = $_SESSION['username'];
+
+    $field = " `request_id`,`bookname`, `username`";
+    $value = " '', '$bookname', '$username'";
+    // echo '<pre>'; print_r($data);
+    $result = $obj1->createData($table,$field,$value);
+    echo "book request sent";
+    echo "<script>location.href='view_book.php';</script>";
+    // echo '<pre>'; print_r($result);
+}
+*/?><!--
 <hr>
-<!--<h3> Here you can request a book. </h3>-->
+
 <h3>Welcome :  <span style="color: red"><?php /*echo $_SESSION['username']  */?> </span></h3>
 <hr>
 <form method="post">
@@ -51,3 +48,4 @@ if (isset($_POST['request'])) {
 <br>
 <hr>
 <a href="view_book.php">View Books</a>
+-->

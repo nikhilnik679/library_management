@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b622106-20bd-43b7-9e3e-8e49ed5324b5" name="Default Changelist" comment="" />
+    <list default="true" id="8b622106-20bd-43b7-9e3e-8e49ed5324b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/add_book.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/add_book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/add_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/add_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/classes/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/classes/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/classes/book.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/classes/Book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/edit_book.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/edit_book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/edit_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/edit_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/request_book.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/request_book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/requested_book.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/requested_book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/templates/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/view_book.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/view_book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/view_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/view_users.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,8 +53,12 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1dUfmFfGYvx89B2yhQK3F40mD76" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -26,8 +66,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/3D Objects/crud_pdo" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
@@ -92,13 +133,35 @@
       <workItem from="1593746069835" duration="3834000" />
       <workItem from="1593761434000" duration="800000" />
       <workItem from="1593762245182" duration="971000" />
-      <workItem from="1593772707059" duration="915000" />
+      <workItem from="1593772707059" duration="4926000" />
+      <workItem from="1593779197610" duration="211000" />
+      <workItem from="1593780661954" duration="4129000" />
+      <workItem from="1593831203226" duration="5280000" />
+      <workItem from="1593860418142" duration="8970000" />
+      <workItem from="1593870892861" duration="10000" />
+      <workItem from="1593923323599" duration="8138000" />
+      <workItem from="1594011077734" duration="615000" />
+      <workItem from="1594035528596" duration="295000" />
+      <workItem from="1594097581487" duration="3848000" />
+      <workItem from="1594115749098" duration="7275000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="349" y="72" key="#CLI_Interpreters" timestamp="1592485207395">
@@ -117,6 +180,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="539" y="219" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1593683514257" />
+    <state x="562" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1594130334811">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="562" y="133" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1594130334811" />
     <state x="430" y="78" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1593698449937">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -125,10 +192,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="115" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1593698513831" />
-    <state x="550" y="172" key="FileChooserDialogImpl" timestamp="1593664696952">
+    <state x="550" y="172" key="FileChooserDialogImpl" timestamp="1593785759794">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="550" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1593664696952" />
+    <state x="550" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1593785759794" />
     <state x="339" y="150" key="NewPhpClassDialog" timestamp="1593668230023">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -145,6 +212,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="668" y="333" key="SimpleOpenTaskDialog/0.0.1536.834@0.0.1536.834" timestamp="1592676538975" />
+    <state x="410" y="144" width="700" height="530" key="recent.locations.popup" timestamp="1594097604649">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="410" y="144" width="700" height="530" key="recent.locations.popup/0.0.1536.834@0.0.1536.834" timestamp="1594097604649" />
     <state x="611" y="190" key="refactoring.ChangeSignatureDialog" timestamp="1592963318900">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -153,22 +224,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1592968610908" />
-    <state x="46" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1593685311043">
+    <state x="46" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1593970689602">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="46" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1593685311043" />
+    <state x="46" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1593970689602" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/public/classes/Database.php</url>
-          <line>29</line>
+          <line>27</line>
           <properties>
             <option name="className" value="\Database" />
             <option name="methodName" value="readData" />
           </properties>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
